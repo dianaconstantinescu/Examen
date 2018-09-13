@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table style="width:100%">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Login Number</th>
+    </tr>
+
+            {% for persoana in user %}
+    <tr>
+        <td align="center">
+            {{ persoana.first_name}} </td>
+        <td> {{ persoana.last_name}}</td>
+        <td> {{ persoana.number_of_login}} </td>
+
+
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
